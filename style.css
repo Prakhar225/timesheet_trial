@@ -1,0 +1,252 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+  a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  /* Timer Styles */
+  .timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid #000;
+  }
+  
+  .timer-text {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .timer-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .timer-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+  }
+  
+  .timer-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .pause-button {
+    background-color: #ffc107;
+    color: #333;
+  }
+  
+  .pause-button:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Task Styles */
+  .task-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .task-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 0.25rem;
+    background-color: #f8f9fa;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
+  
+  .task-input {
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+  }
+  
+  .task-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .task-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .task-list {
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.
+  }  
+/* Styles for the main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f5f5f5;
+  }
+  
+  /* Styles for the heading */
+  h1 {
+    margin-top: 0;
+    font-size: 4rem;
+    text-align: center;
+  }
+  
+  /* Styles for the timer container */
+  .timer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  
+  /* Styles for the timer display */
+  .timer-display {
+    font-size: 8rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Styles for the button container */
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  
+  /* Styles for the buttons */
+  .button {
+    background-color: #8e44ad;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #663399;
+  }
+  
+  /* Styles for the form */
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  
+  /* Styles for the form label */
+  .form label {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Styles for the form input */
+  .form input {
+    font-size: 2rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+  }
+  
+  /* Styles for the form button */
+  .form button {
+    background-color: #8e44ad;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #663399;
+  }
+  
+  /* Styles for the error message */
+  .error {
+    color: red;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  

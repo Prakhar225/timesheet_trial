@@ -1,0 +1,48 @@
+appId: com.example.timetracking
+productName: Time Tracking
+directories:
+  output: dist
+  buildResources: resources
+files:
+  - from: "./dist"
+    to: "./"
+  - from: "./src/main"
+    to: "./main"
+  - from: "./src/renderer"
+    to: "./renderer"
+  - from: "./node_modules"
+    to: "./node_modules"
+  - from: "./resources"
+    to: "./resources"
+asar: true
+mac:
+  icon: "./resources/icon.icns"
+  category: "public.app-category.utilities"
+  target:
+    - target: "dmg"
+      arch: ["x64"]
+  publish:
+    provider: "github"
+    owner: "example"
+    repo: "time-tracking"
+    draft: true
+win:
+  icon: "./resources/icon.ico"
+  target:
+    - target: "nsis"
+      arch: ["x64"]
+  publish:
+    provider: "github"
+    owner: "example"
+    repo: "time-tracking"
+    draft: true
+linux:
+  icon: "./resources/icon.png"
+  target:
+    - target: "AppImage"
+      arch: ["x64"]
+  publish:
+    provider: "github"
+    owner: "example"
+    repo: "time-tracking"
+    draft: true
